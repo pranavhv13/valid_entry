@@ -29,6 +29,12 @@ class ticket_3(models.Model):
     event = models.ForeignKey(Event, on_delete=models.CASCADE,null= True)
     first_name = models.CharField(max_length=100,blank= True, null= True)  
     last_name = models.CharField(max_length=100,blank= True, null= True)  
+
+class ticket_1(models.Model):
+    event = models.ForeignKey(Event, on_delete=models.CASCADE,null= True)
+    first_name = models.CharField(max_length=100,blank= True, null= True)  
+    last_name = models.CharField(max_length=100,blank= True, null= True)
+    final_name = models.CharField(max_length=100,blank= True, null= True)
     
     
 # class Ticket(models.Model):
