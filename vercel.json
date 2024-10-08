@@ -1,13 +1,19 @@
 {
-    "builds": [{
-        "src": "valid_entry/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.10" }
-    }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "valid_entry/wsgi.py"
-        }
-    ]
+  "builds": [
+    {
+      "src": "valid_entry/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.10"
+      },
+      "buildCommand": "apt-get install -y libpq-dev && pip install --upgrade pip"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "valid_entry/wsgi.py"
+    }
+  ]
 }
