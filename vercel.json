@@ -7,10 +7,6 @@
                 "maxLambdaSize": "15mb",
                 "runtime": "python3.10"
             },
-            "env": {
-                "PIP_VERSION": "21.3"
-            }
-        }
     ],
     "routes": [
         {
