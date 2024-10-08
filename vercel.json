@@ -3,6 +3,7 @@
         "src": "valid_entry/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+        "env": { "PIP_VERSION": "21.3" }
     }],
     "routes": [
         {
