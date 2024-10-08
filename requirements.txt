@@ -4,6 +4,7 @@ charset-normalizer==3.3.2
 contourpy==1.2.1
 cycler==0.12.1
 Django==5.0
+gunicorn
 et-xmlfile==1.1.0
 fonttools==4.53.1
 idna==3.7
