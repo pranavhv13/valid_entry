@@ -19,7 +19,6 @@ pygame==2.6.0
 pyjokes==0.6.0
 PyOpenGL==3.1.7
 pyparsing==3.1.2
-pypiwin32==223
 python-dateutil==2.9.0.post0
 pyttsx3==2.90
 requests==2.32.3
